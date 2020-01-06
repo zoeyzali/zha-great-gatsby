@@ -1,7 +1,7 @@
 :root {
   --mainBlue: #2d1ef1;
   --mainPink: #ea1e63;
-  --mainGrey: #ece8dc;
+  --mainGrey: #eee;
   --mainWhite: #fff;
   --mainDark: #222;
 }
@@ -39,4 +39,35 @@ h6 {
   cursor: pointer;
   color: var(--mainPink);
   font-size: 2rem;
+}
+
+.default-bg,
+.about-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #bc4e9c 10%, #f80759 60%);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8 !important;
+}
+
+.about-bg {
+  min-height: 60vh;
+}
+
+.btn-pink {
+  color: var(--mainPink);
+  border-color: var(--mainPink);
+}
+
+.btn-pink:hover {
+  background: var(--mainPink);
+  color: var(--mainGrey);
+}
+
+.footer {
+  background: var(--mainGrey);
 }
