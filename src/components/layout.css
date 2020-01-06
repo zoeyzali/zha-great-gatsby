@@ -1,6 +1,6 @@
 :root {
   --mainBlue: #2d1ef1;
-  --mainYellow: #ff9e09;
+  --mainPink: #ea1e63;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
@@ -13,6 +13,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--mainWhite);
@@ -26,16 +27,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
   letter-spacing: 0.25rem !important;
 }
 
-.text-yellow {
-  color: var(--mainYellow);
+.text-pink {
+  color: var(--mainPink);
 }
 
 .cart-icon {
   cursor: pointer;
-  color: var(--mainYellow);
+  color: var(--mainPink);
   font-size: 2rem;
 }
