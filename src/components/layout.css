@@ -28,7 +28,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif !important;
-  letter-spacing: 0.25rem !important;
+  letter-spacing: 0.23rem !important;
 }
 
 .text-pink {
@@ -67,6 +67,10 @@ h6 {
   background: var(--mainPink);
   color: var(--mainGrey);
 }
+
+/* .menu {
+  background: var(--mainGrey);
+} */
 
 .footer {
   background: var(--mainGrey);
