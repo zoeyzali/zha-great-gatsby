@@ -4,7 +4,7 @@ import Title from '../Globals/Title'
 
 const Contact = () => {
     return (
-        <section className="contact py-5">
+        <section className="contact py-5 mt-5">
             <Title title="Contact Me" />
             <div className="row">
                 <div className="col-10 col-sm-8 col-md-6 mx-auto">
@@ -18,7 +18,7 @@ const Contact = () => {
                                 type="email" className="form-control" name="email" id="email" placeholder="jane@idk.com" />
                         </div>
                         <div className="form-group">
-                            <textarea type="message" className="form-control" name="message" id="message" placeholder="Try sending a message, it works :-)" rows="5" />
+                            <textarea type="message" className="form-control" name="message" id="message" placeholder="Try sending a message, it works!" rows="5" />
                         </div>
                         <button type="submit" className="btn btn-pink btn-block text-uppercase mt-3">Send</button>
                     </form>

@@ -14,8 +14,9 @@ const getProducts = graphql`
         image {
           fluid(maxHeight: 426) {
             src
-...GatsbyContentfulFluid_tracedSVG
-          }
+            ...GatsbyContentfulFluid_tracedSVG
+
+        }
         }
       }
     }
@@ -37,7 +38,8 @@ const ProductsList = () => {
                     </div>
                 </section>
             )
-        }} />
+        }}
+        />
     )
 }
 
