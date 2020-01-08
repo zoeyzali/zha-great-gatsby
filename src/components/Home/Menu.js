@@ -9,7 +9,6 @@ const getCategories = items => {
     let tempCategories = new Set( tempItems )
     let categories = Array.from( tempCategories )
     categories = ["all", ...categories]
-    console.log( categories, 'categories?' )
     return categories
 }
 
