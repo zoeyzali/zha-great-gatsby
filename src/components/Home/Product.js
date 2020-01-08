@@ -1,8 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-//                <div style={{ maxHeight: "426px" }}>
-//        </div >
+
 
 const Product = ( { product } ) => {
     return (

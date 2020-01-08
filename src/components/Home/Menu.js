@@ -9,6 +9,7 @@ const getCategories = items => {
     let tempCategories = new Set( tempItems )
     let categories = Array.from( tempCategories )
     categories = ["all", ...categories]
+    console.log( categories, 'categories?' )
     return categories
 }
 
@@ -20,12 +21,11 @@ export default class Menu extends Component {
             coffeeItems: props.items.edges,
             categories: getCategories( props.items.edges )
         }
-        // console.log( this.state.categories, 'categories' )
     }
+
     handleFilter = category => {
         let tempItems = [...this.state.items]
-        console.log( category, tempItems, 'hello from filter metod' )
-        if ( tempItems === "all" ) {
+        if ( category === "all" ) {
             this.setState( () => {
                 return { coffeeItems: tempItems }
             } )
@@ -43,7 +43,7 @@ export default class Menu extends Component {
                     <div className="container">
                         <Title title="best of our menu" />
 
-                        <div className="row mb-5">
+                        <div className="row mb-4">
                             <div className="col-10 mx-auto text-center">
                                 {this.state.categories.map( ( category, index ) => {
                                     return ( <button type="button" key={index} className="btn btn-pink text-capitalize m-3"
@@ -75,7 +75,8 @@ export default class Menu extends Component {
                                                 <h6 className="mb-0 text-pink">
                                                     <small>
                                                         ${node.price}
-                                                    </small>           </h6>
+                                                    </small>
+                                                </h6>
                                             </div>
                                             <p className="text-muted text-capitalize">
                                                 <small>{node.description.description}
